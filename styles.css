@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Babylonica&family=Bebas+Neue&family=Catamaran:wght@700&family=Dancing+Script&family=Gajraj+One&family=Gloock&family=Heebo:wght@400;500;700&family=Lato:wght@700&family=Montserrat:wght@300&family=Noto+Sans:ital@1&family=Open+Sans:wght@300;500&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Raleway:ital,wght@0,400;1,300&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    
+}
+
+.paralax{
+    background-image: url(./pastamidia/projeto\ calculadora\ imc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10px;
+    height: 100vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.posisitioncalc{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.input label{
+    font-size: 20px;
+}
+
+.input input{
+    width: 100%;
+    height: 40px;
+    background-color:#e6fff5;
+    margin: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    color: white;
+    transition: .4s;
+
+
+}
+
+#button:hover{
+    transform: scale(1.015);
+
+}
+
+/*AQUI COMEÇA A SEGUNDA PARTE DA PÁGINA*/
+
+.paralax-text-decoration{
+    background-image: url(./pastamidia/Design\ sem\ nome.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.space-text{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text h3 {
+    cursor: default
+}
+
+.text p {
+    width: 99%;
+    height: 200px;
+    margin-top: 20px;
+    color: black;
+    padding-left: 20px;
+}
+
+/* aqui é a parte do video*/
+
+
+.video-doctor{
+    width: 500px;
+    height: 290px;
+    border: solid white 10px;
+    margin:10px;
+
+}
+
+
+.position-video{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.position-video span{
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+
+/* AQUI COMEÇA A REPONSIVIDADE*/
+
+@media(max-width: 784px){
+    .paralax-text-decoration {
+        display: flex;
+        flex-direction: column;
+    }
+    .space-text{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        place-items: center;
+    }   
+
+    .position-video{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    .video-doctor{
+        border: none;
+    }
+
+    .paralax-text-decoration{
+        height: 150vh;
+    }
+
+    
+}
+
+@media(max-width: 420px){
+    .posisitioncalc{
+        transform: scale(0.9);
+    }
+
+
+    .paralax-text-decoration {
+        display: flex;
+        flex-direction: column;
+    }
+    .space-text{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        place-items: center;
+    }  
+    .position-video{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .paralax-text-decoration{
+        height: 220vh;
+    }
+    .video-doctor{
+        width: 100%;
+        border: none;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
